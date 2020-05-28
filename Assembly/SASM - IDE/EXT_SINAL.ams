@@ -1,0 +1,11 @@
+%include "io.inc"
+
+section .text
+global CMAIN
+CMAIN:
+    mov ebp, esp; for correct debugging
+    MOV BL, 10001111b
+    MOVSX AX, BL ;EXTENSÃO DE SINAL
+    ;write your code here
+    xor eax, eax
+    ret

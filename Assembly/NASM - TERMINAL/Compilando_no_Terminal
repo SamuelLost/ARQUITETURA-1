@@ -1,0 +1,17 @@
+##Compilando e vinculando um programa de montagem no NASM##
+
+# Certifique-se de definir o caminho dos binários nasm e ld na sua variável de ambiente PATH. Agora, execute as seguintes etapas para compilar e vincular o programa acima -
+
+# Digite o código acima usando um editor de texto e salve-o como hello.asm.
+
+# Verifique se você está no mesmo diretório em que salvou o hello.asm .
+
+# Para montar o programa, digite nasm -f elf hello.asm
+
+# Se houver algum erro, você será solicitado sobre isso nesse estágio. Caso contrário, um arquivo de objeto do seu programa chamado hello.o será criado.
+
+# Para vincular o arquivo de objeto e criar um arquivo executável chamado hello, digite ld -m elf_i386 -s hello.o -o hello
+
+# Execute o programa digitando ./hello
+
+OBS: O ARQUIVO NÃO PODE TER CMAIN E NEM A BIBLIOTECA io.inc, TEM QUE SER _start
