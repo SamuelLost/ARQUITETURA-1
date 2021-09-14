@@ -1,0 +1,130 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc} %Caracteres especiais
+\usepackage{graphicx} %Para usar imagens
+\usepackage[brazil]{babel}
+\usepackage{indentfirst} %Indentação
+\usepackage{setspace} %Espaçamento entre linhas
+\pagenumbering{arabic} % NUMERAÇÃO DA PÁGINA, \thispagestyle{empty} % NÃO MOSTRA O NÚMERO EM DETERMINADA PÁGINA
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+\begin{document}
+	\pagenumbering{arabic} % NUMERAÇÃO DA PÁGINA
+	\begin{center}
+		\begin{figure}[h!]
+			\centering
+			\includegraphics[scale=0.4]{logoufcquix.png}
+			
+		\end{figure}
+		
+		\large{Universidade Federal do Ceará - Campus Quixadá}
+		\
+		
+		\
+		
+		\Large {\textbf{Evolução dos Processadores}} 
+		
+		\textbf{QXD0132 - Arquitetura e Organização de Computadores I}
+		
+		\
+		
+		\large{\textbf{Prof. Dr.} Wagner Guimarães Al Alam}
+		
+		Setembro 2020
+		
+		\
+		
+		\textbf{Aluno:} Samuel Henrique - \textbf{Matrícula:} 473360 \\
+		
+		\
+		
+		\
+		
+		\
+	\end{center}
+	\begin{center}
+		
+		\
+		
+		\
+		
+		\
+		
+		\
+		
+		\
+		
+		\
+		
+		\
+		
+		\
+		
+		\
+		
+		\
+		
+		\
+		
+		\
+		
+		\
+		
+		\
+		
+		\
+		Quixadá-CE \ \ \  
+	\end{center} \par
+	\thispagestyle{empty}
+	\newpage
+	\onehalfspacing
+\section{Evolução} 
+	Em 1965 Gordon Moore, afirmou no artigo [1] que a capacidade de processamento dobraria a cada 18 meses e que esse crescimento seria constante. Essa teoria hoje é conhecida com "Lei de Moore" e é válida até os dias atuais. \
+	
+	O primeiro processador comercial produzido no mundo, o Intel 4004. Antes de ser fabricado, os eletrônicos possuíam vários chips separados para funções como controle de display e teclado, com ele foi possível juntar tudo no mesmo chip. Ele possui 4-bits para dados e continha 46 instruções [2]. Possui também 12-bits para endereço, sendo multiplexado [3]. O conjunto de instruções inclui, ramificação condicional, jumps para sub-rotina e busca indireta [2]. \
+	
+	Foram adicionadas 14 instruções em relação ao processador passado, um total de 60 agora, e apresentou a capacidade de interrupção [10]. O \textbf{Intel 4040}, possui o mesmo número de bits para dados e endereços que o Intel 4004. \
+	
+	Agora com o dobro de bits para dados, 8-bits, seu nome veio justamente do fato de ter o dobro da quantidade que seu irmão mais velho tinha, ficando então \textbf{Intel 8008}. Apresentava compatibilidade TLL, 14-bits para endereço de memória, contém 7 registradores de 8-bits [4]. Outra novidade foi a presença da ULA [5]. \
+	
+	O \textbf{Intel 8080} foi o primeiro processador voltado para uso geral. Possui 8-bits de dados, 7 registradores de propósito geral e 16-bits para endereço de memória [5]. Além disso, a principal diferença foi o aumento na frequência de operação, e com uma nova tecnologia, chamada de N-channel [6]. \
+	
+	Após o grande sucesso do modelo passado, a Intel conseguiu produzir seu primeiro processador de 16-bits, o \textbf{Intel 8086}. Como seus registradores agora possuíam 16-bits, então se tornou possível fazer a divisão deles em 2, usando a parte mais significativa ou a menos significativa, de 8-bits cada e apresentava 20-bits para endereço [7]. \
+	
+	 \textbf{Intel 8088}, uma versão do Intel 8086 com um barramento de 8-bits, a Intel conseguiu nesse ano tornar a arquitetura 8086/8088 como padrão mundial de 16-bits [8]. \
+	 
+	 \textbf{Intel 80286}, mais conhecido como Intel 286, o processador chegava com 16-bits para dados, 24-bits para endereço e 8 registradores gerais de 16-bits cada [9]. A grande novidade foi a presença de um coprocessador para realização de cálculos ponto flutuante, o 8287 NPX [9]. \
+	 
+	 \textbf{Intel 80386}, a grande inovação, o primeiro processador de 32-bits. Apresentava 8 registradores gerais de 32-bits cada e 32-bits para endereço. [11] \
+	 
+	 \textbf{Intel 80386SX}, uma versão mais simples e básica do Intel 80386, o 386SX conta com 16-bits para dados, 24-bits para endereço. Ele foi feito visando o mercado doméstico e educacional, já que contava com um preço baixo [11]. \
+	 
+	 \textbf{Intel 80486DX (i486)}, processador RISC de 32-bits, muitas instruções passaram a ser executadas em um ciclo de clock, instruções de pipelining e uma unidade de ponto flutuante, FPU, novidades que não tinha no processador anterior [12]. Com 8 registradores gerais de 32-bits cada, sendo divisíveis em 16- e 8-bits, e também apresentou 8 registradores de ponto-flutuante, 80-bits cada. Contém 32-bits para dados, 32-bits para endereço [13]. \
+	 
+	 \textbf{Intel Pentium}, apresenta arquitetura Superescalar, possui dois canais de execução de dados, que permite que mais de uma instrução seja executada em um ciclo de clock, possui um barramento de dados de 64-bits, principais mudanças em relação ao i486. Com relação a registradores e endereços, ainda continua igual ao seu antecessor.
+%\section{Referências}
+\newpage
+\begin{thebibliography}{99}%4004, 4040, 8008, 8080, 8085, 8086, 8088, 8286, 80386, 80386ECX, 80486DX, i486, pentium
+	\bibitem[1](G.E. Moore. Cramming more components onto
+	integrated circuits. Electronics, April 19
+	1965.
+	\bibitem[2] (Datasheet do Intel $4004^{TM}$. Acessado em 28 de setembro 2020 de https://datasheetspdf.com/pdf-file/787753/Intel/4004/1
+	\bibitem[3] ($MCS^{TM}$-4 Assembly Language Programming Manual. Acessado em 28 de setembro 2020 de http://bitsavers.trailing-edge.com/components/intel/MCS4/MCS-4\_Assembly\_Language\_Programming\_Manual\_Dec73.pdf
+	\bibitem[4] (8008 8-bit Parallel Central Processor Unit - Users Manual. Acessado em 29 de setembro de 2020 de 
+	http://www.classiccmp.org/8008/8008UM.pdf
+	\bibitem[5] ($MCS^{TM}$-8 Assembly Language Programming Manual. Acessado em 29 de setembro de 2020 de http://www.bitsavers.org/components/intel/MCS8/MCS\_8\_Assembly
+	\_Language\_Programming\_Manual\_Preliminary\_Edition\_Nov73.pdf
+	\bibitem[5] (Intel 8080 Assembly Language Programming Manual. Acessado em 1 de outubro de 2020 de https://altairclone.com/downloads/manuals/8080\%20Programmers\%
+	20Manual.pdf
+	\bibitem[6] (20 years INTEL: ARCHITECT OF THE MICROCOMPUTER REVOLUTION. Acessado em 1 de outubro de 2020 de https://www.intel.com/Assets/PDF/General/20yrs.pdf
+	\bibitem[7](ASM86 LANGUAGE REFERENCE MANUAL. Acessado em 1 de outubro de 2020 de http://bitsavers.trailing-edge.com/pdf/intel/ISIS\_II/121703-003\_ASM86\_Language\_Reference\_Manual\_Mar85.pdf
+	\bibitem[8] (Evolução dos processadores. Rafael Bruno Almeida. Acessado em 02 de outubro de 2020 de https://www.ic.unicamp.br/~ducatte/mo401/1s2009/T2/089065-t2.pdf
+	\bibitem[9](Programmers Reference Manual. Acessado em 02 de outubro de 2020 de http://bitsavers.trailing-edge.com/components/intel/80286/210498-005\_80286\_and\_80287\_Programmers\_Reference\_Manual\_1987.pdf
+	\bibitem[10] (Datasheet do Intel $4040^{TM}$. Acessado 3 de outubro de 2020 de http://datasheets.chipdb.org/Intel/MCS-40/4040.pdf
+	\bibitem[11] (Intel 80386. Acessado em 3 de outubro de 2020 de https://en.wikipedia.org/wiki/Intel\_80386
+	\bibitem[12] (Datasheet Intel 80486DX. Acessado em 3 de outubro de 2020. https://datasheet.octopart.com/80486DX2-66-Intel-datasheet-7086155.pdf
+	\bibitem[13] (Intel 80486. Acessado em 4 de outubro de 2010. https://en.wikipedia.org/wiki/Intel\_80486
+	\bibitem[14] (Pentium. Acessado em 4 de outubro de 2020. https://pt.wikipedia.org/wiki/Pentium
+\end{thebibliography}
+\end{document} 

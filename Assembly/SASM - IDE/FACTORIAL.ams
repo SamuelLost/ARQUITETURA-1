@@ -1,0 +1,27 @@
+%include "io.inc"
+section .bss 
+RESULT RESD 1
+section .data 
+x DD 8
+section .text
+global CMAIN
+CMAIN:
+    mov ebp, esp; for correct debugging
+    mov eax, 0
+    ;mov ebx, 0
+   
+    mov EAX, [x]
+    ;mov EBX, [x]
+    mov ECX, [x]
+L1:
+    cmp ECX, 1
+    jle END
+	
+    sub ECX, 1
+    mul ECX
+    jmp L1
+END:
+    mov [RESULT], EAX
+    PRINT_UDEC 4, RESULT
+    xor eax, eax
+    ret

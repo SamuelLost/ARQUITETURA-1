@@ -4,9 +4,8 @@ section .text
 global CMAIN
 CMAIN:
     mov ebp, esp; for correct debugging
-    MOV AL, 5h
-    MOV BL, 4h
-    XCHG AX, BX
-    ;write your code here
+    mov ax, 1000001110000011b
+    bt ax,7
+    
     xor eax, eax
     ret
